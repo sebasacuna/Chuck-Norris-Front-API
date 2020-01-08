@@ -1,1 +1,8 @@
-<p>jokes works!</p>
+<div class="container">
+	<mat-card class="joke-card">
+		<h1 [className]="show ? 'fade-in joketext' : ''" >{{dataValue.value}}</h1>
+	</mat-card>
+	<mat-card class="joke-card-2">
+		<button (click)="getJoke($event)" mat-raised-button color="primary">Give me a Joke!</button>
+	</mat-card>
+</div>

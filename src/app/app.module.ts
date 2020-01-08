@@ -5,6 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { JokesComponent } from './jokes/jokes.component';
@@ -17,7 +20,7 @@ import { AboutComponent } from './about/about.component';
     AppComponent,
     JokesComponent,
     HeaderComponent,
-    AboutComponent
+	AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,10 @@ import { AboutComponent } from './about/about.component';
 	BrowserAnimationsModule,
 	MatToolbarModule,
 	MatIconModule,
-	MatButtonModule
+	MatButtonModule,
+	MatCardModule,
+	HttpClientModule,
+	NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
