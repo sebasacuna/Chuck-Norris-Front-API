@@ -8,6 +8,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { JokesComponent } from './jokes/jokes.component';
@@ -31,6 +33,8 @@ import { AboutComponent } from './about/about.component';
 	MatButtonModule,
 	MatCardModule,
 	HttpClientModule,
+	MatTooltipModule,
+	MatDialogModule,
 	NgbModule
   ],
   providers: [],
