@@ -31,7 +31,7 @@ export class JokesComponent implements OnInit {
 
 
 	dataValue: any;
-	joke: string;
+	joke = "";
 	init = 'in'
 	show = false;
 
@@ -55,6 +55,7 @@ export class JokesComponent implements OnInit {
 	this.dataValue =this.http.get(RANDOMJOKEURL).subscribe(response => {
 		this.show = true;
 		this.dataValue = response; 
+		this.joke = this.dataValue.value;
 	},err =>{
 		this.show = false;
 	   console.error(err)
