@@ -30,16 +30,18 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class JokesComponent implements OnInit {
 
 
-	dataValue = {};
+	dataValue: any;
+	joke: string;
 	init = 'in'
 	show = false;
 
 
   constructor(private http: HttpClient) { 
 	  this.show = false;
-	  this.dataValue =this.http.get(RANDOMJOKEURL).subscribe(response => {
+	  	this.http.get(RANDOMJOKEURL).subscribe(response => {
 		this.show = true;
 		this.dataValue = response; 
+		this.joke = this.dataValue.value;
 	},err =>{
 		this.show = false;
 	   console.error(err)
