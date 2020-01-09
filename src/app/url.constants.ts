@@ -1,1 +1,1 @@
-export const RANDOMJOKEURL = "https://api.chucknorris.io/jokes/random" 
+export const RANDOMJOKEURL = 'https://api.chucknorris.io/jokes/random';
