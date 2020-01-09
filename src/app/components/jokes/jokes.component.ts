@@ -26,7 +26,7 @@ export class JokesComponent implements OnInit {
 
   }
 
-  getJoke() {
+  getJoke($event) {
     this.show = false;
     this.dataValue = this.randomJokeService.getJoke().subscribe(response => {
       this.show = true;
